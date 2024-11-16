@@ -1,0 +1,121 @@
+body {
+    font-family: var(--main-font);
+
+}
+
+body section {
+    margin: 64px;
+
+}
+
+/* menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.menu .item {
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: 0.3s;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.menu .item:not(.cta)::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+
+.menu .item:hover {
+    transform: translateY(-4px);
+    font-weight: bold;
+
+}
+
+.menu .item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+.menu .cta {
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.menu .cta:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border-color: var(--black-color);
+}
+
+/* hero-section */
+
+#hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-section .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1.5;
+}
+
+
+#hero-section .title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#hero-section .sub-title {
+    font-size: 1.2em;
+
+}
+
+#hero-section .cta {
+
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: var(--black-color);
+    color: #fff;
+    border-color: var(--black-color);
+    transition: 0.3s;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#hero-section .cta:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border-color: var(--black-color);
+    cursor: pointer;
+}
