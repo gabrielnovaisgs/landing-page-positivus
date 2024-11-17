@@ -45,6 +45,27 @@ button.cta:hover {
     cursor: pointer;
 }
 
+section .header {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+section .header .title {
+    font-size: var(--h2-size);
+    font-weight: bold;
+    padding: 8px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+section .header p {
+    font-size: var(--p-size);
+    width: 50%;
+    line-height: 1.2;
+}
+
+
 /* menu */
 .menu {
     display: flex;
@@ -206,25 +227,7 @@ button.cta:hover {
 
 /*Services*/
 
-#services-section .header {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
 
-#services-section .header .title {
-    font-size: var(--h2-size);
-    font-weight: bold;
-    padding: 8px;
-    background-color: var(--primary-color);
-    border-radius: 4px;
-}
-
-#services-section .header p {
-    font-size: var(--p-size);
-    width: 50%;
-    line-height: 1.2;
-}
 
 #services-section .block-list {
     --service-block-width: 640px;
@@ -334,6 +337,36 @@ button.cta:hover {
     right: calc(48px);
     top: -15%;
     height: 130%;
+}
+
+/*Case Study*/
+
+#case-study-section .block {
+    margin-top: 32px;
+    background-color: var(--black-color);
+    border-radius: 32px;
+    padding: 48px;
+    grid-column: 2 span;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#case-study-section .block .text {
+    color: #fff;
+    font-size: 1rem;
+    text-align: justify;
+
+}
+
+#case-study-section .block .divider {
+    width: 1px;
+    height: 64px;
+    background-color: #fff;
+
 }
 
 /*footer*/
