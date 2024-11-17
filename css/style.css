@@ -17,13 +17,17 @@ body footer {
     margin: var(--section-margin-y) var(--page-margin-x) 0 var(--page-margin-x);
 }
 
-p {
+p,
+label,
+input {
     font-size: var(--p-size);
 }
 
 a {
     text-decoration: none;
 }
+
+
 
 button.cta {
 
@@ -367,6 +371,45 @@ section .header p {
     height: 64px;
     background-color: #fff;
 
+}
+
+
+/*Contact Us*/
+
+#contact-section .block {
+    display: block;
+    margin-top: 32px;
+    width: calc(100% - var(--page-margin-x));
+    border-radius: 32px;
+    padding: 48px;
+    background-color: var(--gray-color);
+    position: relative;
+}
+
+#contact-section .block .form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 8px;
+}
+
+#contact-section .block .form textarea,
+#contact-section .block .form input {
+    background-color: white;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+    padding: 16px;
+    color: black;
+    font-family: var(--main-font);
+    font-size: var(--p-size);
+}
+
+#contact-section .block .image {
+    position: absolute;
+    object-fit: contain;
+    height: 80%;
+    right: 0;
+    top: 10%;
 }
 
 /*footer*/
