@@ -379,7 +379,6 @@ section .header p {
 #contact-section .block {
     display: block;
     margin-top: 32px;
-    width: calc(100% - var(--page-margin-x));
     border-radius: 32px;
     padding: 48px;
     background-color: var(--gray-color);
@@ -410,6 +409,66 @@ section .header p {
     height: 80%;
     right: 0;
     top: 10%;
+}
+
+/*Testimonials*/
+#testimonials-section .block {
+    margin-top: 32px;
+    background-color: var(--black-color);
+    border-radius: 32px;
+    padding: 48px;
+    color: #fff;
+}
+
+#testimonials-section .block .list {
+    display: flex;
+    gap: 32px;
+
+}
+
+#testimonials-section .block .item {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 16px);
+    gap: 16px;
+}
+
+#testimonials-section .block .item .message {
+    border: 1px solid var(--primary-color);
+    padding: 32px;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    position: relative;
+    transition: 0.3s;
+}
+
+#testimonials-section .block .item:hover .message {
+    transform: translateY(-8px);
+    box-shadow:
+        6px 5px 32px -11px rgba(185, 255, 102, 0.5);
+}
+
+#testimonials-section .block .item .message::after {
+    border-bottom: 1px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color);
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 10%;
+    bottom: -16px;
+    transform: rotate(45deg);
+    background-color: var(--black-color);
+}
+
+#testimonials-section .block .item .name,
+#testimonials-section .block .item .sub-title {
+    margin-left: 10%;
+}
+
+#testimonials-section .block .item .name {
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 /*footer*/
