@@ -1,0 +1,98 @@
+/* menu */
+nav.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow:
+        0px 2px 32px rgba(0, 0, 0, 0.1);
+}
+
+nav.menu .logo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--black-color);
+}
+
+
+nav.menu .menu-button {
+    background-color: var(--black-color);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+nav.menu ul {
+    display: none;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    font-size: var(--p-size);
+    position: relative;
+}
+
+nav.menu .item {
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: 0.3s;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+}
+
+nav.menu .item:not(.cta)::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+
+nav.menu .item:hover {
+    transform: translateY(-4px);
+    font-weight: bold;
+
+}
+
+nav.menu .item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+nav.menu .cta {
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+nav.menu .cta:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border-color: var(--black-color);
+}
+
+@media (min-width: 768px) {
+    nav.menu .menu-button {
+        display: none;
+    }
+
+    nav.menu ul {
+        display: flex;
+    }
+}

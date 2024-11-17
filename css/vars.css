@@ -16,4 +16,14 @@
 
     --page-margin-x: 128px;
     --section-margin-y: 64px;
+
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --page-margin-x: 8rem;
+        --section-margin-y: 4rem;
+    }
 }
