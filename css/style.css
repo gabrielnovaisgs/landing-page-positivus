@@ -1,15 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--main-font);
+
 
 }
 
 body section {
-    margin: 64px 128px;
+    margin: var(--section-margin-y) var(--page-margin-x);
 
+}
+
+body footer {
+    margin: var(--section-margin-y) var(--page-margin-x) 0 var(--page-margin-x);
 }
 
 p {
     font-size: var(--p-size);
+}
+
+a {
+    text-decoration: none;
 }
 
 button.cta {
@@ -321,4 +334,120 @@ button.cta:hover {
     right: calc(48px);
     top: -15%;
     height: 130%;
+}
+
+/*footer*/
+
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 64px;
+    border-radius: 32px 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer .header .menu {
+    display: flex;
+    gap: 16px;
+}
+
+.footer .header .menu .item {
+    color: white;
+    border-bottom: 1px solid #fff;
+}
+
+
+.footer .header .social-media {
+    display: flex;
+    gap: 8px;
+    font-size: 24px;
+}
+
+.footer .header .social-media i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer .header .social-media i:hover {
+    color: var(--primary-color);
+    transform: translateY(-4px);
+}
+
+.footer .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    line-height: 1.5;
+
+}
+
+.footer .contact .title {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.footer .contact .sub-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.footer .contact .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 32px;
+    width: calc(100% - 128px);
+    border-radius: 32px;
+    align-items: center;
+    padding: 64px;
+    background-color: var(--black-color);
+}
+
+.footer .contact .form input {
+    background-color: transparent;
+    border: 1px solid var(--gray-color);
+    border-radius: 10px;
+    padding: 16px;
+    color: #fff;
+    font-family: var(--main-font);
+    font-size: var(--p-size);
+}
+
+.footer .contact .form button[type=submit] {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    color: var(--black-color);
+    font-family: var(--main-font);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: var(--p-size);
+    transition: 0.3s;
+}
+
+.footer .contact .form button[type=submit]:hover {
+    background-color: var(--gray-color);
+    color: var(--black-color);
+    border: 1px solid var(--primary-color);
+}
+
+.footer .divider {
+    width: 100%;
+    height: 1px;
+    margin: 32px 0;
+    background-color: var(--gray-color);
 }
