@@ -7,4 +7,10 @@
     --black-color: #191A23;
 
     --main-font: 'Space Grotesk', sans-serif;
+
+    --h1-size: 3rem;
+    --h2-size: 2rem;
+    --h3-size: 1.5rem;
+
+    --p-size: 1.2rem;
 }
