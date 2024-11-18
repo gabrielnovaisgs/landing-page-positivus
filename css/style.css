@@ -130,65 +130,7 @@ section .header p {
 
 
 
-/*Testimonials*/
-#testimonials-section .block {
-    margin-top: 2rem;
-    background-color: var(--black-color);
-    border-radius: 2rem;
-    padding: 3rem;
-    color: #fff;
-}
 
-#testimonials-section .block .list {
-    display: flex;
-    gap: 2rem;
-
-}
-
-#testimonials-section .block .item {
-    display: flex;
-    flex-direction: column;
-    width: calc(50% - 1rem);
-    gap: 1rem;
-}
-
-#testimonials-section .block .item .message {
-    border: 1px solid var(--primary-color);
-    padding: 2rem;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-    position: relative;
-    transition: 0.3s;
-}
-
-#testimonials-section .block .item:hover .message {
-    transform: translateY(-0.5rem);
-    box-shadow:
-        6px 5px 2rem -11px rgba(185, 255, 102, 0.5);
-}
-
-#testimonials-section .block .item .message::after {
-    border-bottom: 1px solid var(--primary-color);
-    border-right: 1px solid var(--primary-color);
-    content: '';
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    left: 10%;
-    bottom: -1rem;
-    transform: rotate(45deg);
-    background-color: var(--black-color);
-}
-
-#testimonials-section .block .item .name,
-#testimonials-section .block .item .sub-title {
-    margin-left: 10%;
-}
-
-#testimonials-section .block .item .name {
-    font-weight: bold;
-    color: var(--primary-color);
-}
 
 /*footer*/
 
