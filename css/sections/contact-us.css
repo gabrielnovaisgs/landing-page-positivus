@@ -1,0 +1,55 @@
+/*Contact Us*/
+
+#contact-section .block {
+    display: block;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: var(--gray-color);
+    position: relative;
+}
+
+#contact-section .block .form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+#contact-section .block .form textarea,
+#contact-section .block .form input {
+    background-color: white;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+    padding: 1rem;
+    color: black;
+    font-family: var(--main-font);
+    font-size: var(--p-size);
+}
+
+#contact-section .block .image {
+    display: none;
+}
+
+#contact-section .block .form button[type=submit] {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #contact-section .block .image {
+        display: block;
+        position: absolute;
+        object-fit: contain;
+        height: 80%;
+        right: 0;
+        top: 10%;
+    }
+
+    #contact-section .block .form {
+        width: 50%;
+    }
+
+    #contact-section .block .form button[type=submit] {
+        width: fit-content;
+    }
+}
