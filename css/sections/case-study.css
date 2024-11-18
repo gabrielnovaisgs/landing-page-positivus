@@ -1,0 +1,62 @@
+/*Case Study*/
+
+#case-study-section .list {
+    overflow-x: auto;
+}
+
+#case-study-section .block {
+    margin-top: 2rem;
+
+    height: fit-content;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#case-study-section .block .text {
+    background-color: var(--black-color);
+    width: 16rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+#case-study-section .block .divider {
+    display: none;
+
+}
+
+@media (min-width: 768px) {
+    #case-study-section .block .divider {
+        display: block;
+        width: 1px;
+        height: 4rem;
+        background-color: #fff;
+
+    }
+
+    #case-study-section .block .text {
+        padding: 0;
+        text-align: justify;
+
+    }
+
+    #case-study-section .block {
+        margin-top: 2rem;
+        background-color: var(--black-color);
+        border-radius: 2rem;
+        padding: 3rem;
+        width: auto;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
